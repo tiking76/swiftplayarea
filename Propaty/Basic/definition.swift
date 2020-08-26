@@ -1,18 +1,23 @@
 import Foundation
 
 struct Greeting {
+    static let signature = "Sent from iphone"
     var to = "Yoshiki"
     var body = "Hello"
+}
+
+func print(greeting: Greeting) {
+    print("to: \(greeting.to)")
+    print("body: \(greeting.body)")
+    print("signature: \(Greeting.signature)")
 }
 
 let greeting1 = Greeting()
 var greeting2 = Greeting()
 
 greeting2.to = "tiking"
+greeting2.body = "Hi"
 
-let to1 = greeting1.to
-let to2 = greeting2.to
-
-print(to1)
-print(to2)
+print(greeting: greeting1)
+print(greeting: greeting2)
 
