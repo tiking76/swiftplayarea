@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 print("Enter your query here > ", terminator: "")
 
 guard let keyword = readLine(strippingNewline: true) else {
