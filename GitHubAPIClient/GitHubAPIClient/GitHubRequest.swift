@@ -5,6 +5,7 @@
 
 import Foundation
 
+//associatedtypeで、デコード時に型をできるようにしている
 protocol GitHubRequest {
     associatedtype Response : Decodable
 
